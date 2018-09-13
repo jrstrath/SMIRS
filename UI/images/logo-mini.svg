@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+    viewBox="0 0 133.37 132.06" preserveAspectRatio="xMidYMid meet">
+    <defs>
+        <style>
+            .cls-1,
+            .cls-3{opacity:0.8;}
+            .cls-1{fill:url(#radial-gradient);}
+            .cls-2{fill:url(#linear-gradient);}
+            .cls-3{fill:url(#radial-gradient-2);}
+            .cls-4{font-size:42.08px;fill:#fff;font-family:Antonio-Regular, Antonio;}
+        </style>
+        <radialGradient id="radial-gradient" cx="36.89" cy="105.32" r="206.3" 
+            gradientTransform="translate(-41.14 52.87) rotate(-10.91)" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#edbfe8"/>
+            <stop offset="0.07" stop-color="#eaabd7"/>
+            <stop offset="0.22" stop-color="#e477ad"/>
+            <stop offset="0.43" stop-color="#d92569"/>
+            <stop offset="0.45" stop-color="#d81c61"/>
+            <stop offset="0.5" stop-color="#d7256d"/>
+            <stop offset="0.73" stop-color="#d1479e"/>
+            <stop offset="0.9" stop-color="#cd5dbc"/>
+            <stop offset="1" stop-color="#cc65c7"/>
+        </radialGradient>
+        <linearGradient id="linear-gradient" x1="7.54" y1="62.92" x2="133.37" y2="62.92" 
+            gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#edbfe8"/>
+            <stop offset="0.18" stop-color="#eab6e5"/>
+            <stop offset="0.48" stop-color="#e19edc"/>
+            <stop offset="0.84" stop-color="#d378ce"/>
+            <stop offset="1" stop-color="#cc65c7"/>
+        </linearGradient>
+        <radialGradient id="radial-gradient-2" cx="7.18" cy="129.49" r="193.51" 
+            gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#e194db"/>
+            <stop offset="0.09" stop-color="#e080c7"/>
+            <stop offset="0.28" stop-color="#dc4e94"/>
+            <stop offset="0.45" stop-color="#d81c61"/>
+            <stop offset="0.67" stop-color="#b11658"/>
+            <stop offset="0.88" stop-color="#931152"/>
+            <stop offset="1" stop-color="#880f4f"/>
+        </radialGradient>
+    </defs>
+    <title>Asset 1</title>
+    <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1">
+    <path class="cls-1" d="M131,93.36A20.18,20.18,0,0,1,115,117l-76.3,14.7a20.18,20.18,0,0,1-23.63-16L.37,39.39a20.16,20.16,0,0,1,16-23.62L92.66,1.06a20.19,20.19,0,0,1,23.63,16Z"/>
+    <path class="cls-2" d="M115.72,111.35a18.93,18.93,0,0,1-22.84,14L22,108.18A18.92,18.92,0,0,1,8.08,85.34L25.2,14.48A18.93,18.93,0,0,1,48,.53l70.85,17.12a18.93,18.93,0,0,1,14,22.85Z"/>
+    <rect class="cls-3" x="13.21" y="6.72" width="110.74" height="110.74" rx="18.92" ry="18.92"/>
+    <text class="cls-4" transform="translate(26.04 78.94)">SMIRS</text>
+    </g></g>
+</svg>
