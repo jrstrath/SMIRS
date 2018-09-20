@@ -1,3 +1,7 @@
+<?php
+   include('pages/samples/session.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>

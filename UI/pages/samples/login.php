@@ -1,3 +1,42 @@
+<?php
+    include ("connect.php");
+    session_start();
+
+    if($_SERVER["REQUEST_METHOD"] == "POST") {
+        // username and password sent from form 
+        
+        $myusername = mysqli_real_escape_string($db,$_POST['username']);
+        $mypassword = mysqli_real_escape_string($db,$_POST['password']); 
+        
+        $sql = "SELECT farmer_id FROM farmer WHERE username = '$myusername' and password = '$mypassword'";
+        $result = mysqli_query($db,$sql);
+        $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
+        
+        $count = mysqli_num_rows($result);
+        
+        // If result matched $myusername and $mypassword, table row must be 1 row
+          
+        if($count == 1) {
+           session_start("myusername");
+           $_SESSION['login_user'] = $myusername;
+           
+           header("location: ../../index.php");
+        }else {
+           $error = "Your Login Name or Password is invalid";
+        }
+     }
+
+     //Logout page
+     /*
+     <?php
+      session_start();
+   
+      if(session_destroy()) {
+      header("Location: ../../login.php");
+      }
+      ?>*/
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -30,7 +69,7 @@
             <div class="col-lg-4 mx-auto">
               
               <div class="auto-form-wrapper">
-                <form action="login.php" method="POST">
+                <form action="" method="POST">
                   <div class="form-group">
                     <label class="label">Username</label>
                     <div class="input-group">
