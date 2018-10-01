@@ -1,2 +1,0 @@
-dc:identifier,dc:modified,ayto:type,ayto:latitude,ayto:longitude,ayto:relativeHumidity,ayto:windDirection,ayto:windSpeed,ayto:battery,ayto:temperature,ayto:solarRadiation,ayto:atmosphericPressure,ayto:rainfall,ayto:groundTemperature,ayto:soilMoistureTension,ayto:radiationPAR,uri
-3202,2018-09-27T08:42:05Z,traffic,,,0.5507,,,,26.71,,,,,,,http://datos.santander.es/api/datos/sensores_smart_irrigation/3202.csv
