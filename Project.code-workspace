@@ -1,13 +1,13 @@
 {
 	"folders": [
 		{
-			"path": "AI"
-		},
-		{
 			"path": "Firmware"
 		},
 		{
 			"path": "UI"
+		},
+		{
+			"path": "AI"
 		}
 	]
 }
