@@ -46,7 +46,7 @@
               <a class="nav-link dropdown-toggle" id="UserDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
                 
                 <!--Read username from Database-->
-                <span class="profile-text">Hello, <?php echo $result ?>!</span>
+                <span class="profile-text">Hello Farmer!</span>
                 <img class="img-xs rounded-circle" src="images/faces-clipart/pic-1.png" alt="Profile image">
               </a>
               
