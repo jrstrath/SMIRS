@@ -30,7 +30,7 @@ def Pred(temp, rh, sm):
     prediction = clf_gini.predict([[temp, rh, sm]])
     print(prediction)
 
-Pred(28,65,620);
+Pred(35,65,520);
 
 #Testing
 #y_train = clf_gini.predict(X_train)
