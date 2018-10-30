@@ -3,6 +3,8 @@
 #include "DHT.h"
 #include "SoilMoisture.h"
 #include "SolenoidValve.h"
+#include "Ethernet.h"
+#include "SPI.h"
 
 
 // Pin Definitions
@@ -28,11 +30,13 @@ SolenoidValve solenoidValve(SOLENOIDVALVE_PIN_COIL1);
 const int timeout = 10000;       //define timeout of 10 sec
 long time0;
 
+//Ethernet
+byte mac[] = {0x00, 0xAA, 0xBB, 0xCC, 0xDE, 0x01}; //Reserve MAC Address
+EthernetClient client;
 
 //waterflow sensor
 byte sensorInterrupt = 0;  // 0 = digital pin 2
 byte sensorPin       = 2;
-
 float calibrationFactor = 4.5;
 volatile byte pulseCount;  
 float flowRate;
@@ -41,12 +45,31 @@ unsigned long totalMilliLitres;
 
 unsigned long oldTime;
 
+//Variables for timer
+long previousMillis = 0;
+unsigned long currentMillis = 0;
+long interval = 250000; //Reading Interval
+
+//Data Variables
+float dhtHumidity = dht.readHumidity();
+float dhtTempC = dht.readTempC();
+int soilMoisture5vVal = soilMoisture5v.read();
+
+String data;
+
 // Setup the essentials for your circuit to work. It runs first every time your circuit is powered with electricity.
 void setup() 
 {
     // Setup Serial which is useful for debugging
     // Use the Serial Monitor to view printed messages
+
     Serial.begin(9600);
+    
+    //Check ethernet connection
+    if (Ethernet.begin(mac) == 0){
+      Serial.println("Failed to configure Ethernet using DHCP");
+    }
+    
     while (!Serial) ; // wait for serial port to connect. Needed for native USB
     Serial.println("start");
 
@@ -65,8 +88,15 @@ void setup()
     attachInterrupt(sensorInterrupt, pulseCounter, FALLING);
       
     dht.begin();
-    
+    delay(10000); //Give sensor time to start
+
+   dhtHumidity = (float)dht.readHumidity();
+   dhtTempC = (float)dht.readTempC();
+   soilMoisture5vVal = (int)soilMoisture5v.read();
+
+    data = "";
 }
+
 
 // Main logic of your circuit. It defines the interaction between the components you selected. After setup, it runs over and over again, in an eternal loop.
 void loop() 
@@ -74,48 +104,52 @@ void loop()
     //Connect Ethernet Module: Look into having it in the setup instead of Loop section
 
 
-    //Sensing all environmental conditions
-        // DHT22/11 Humidity and Temperature Sensor Reading humidity in % and Temperature in Celcius
-        float dhtHumidity = dht.readHumidity();
-        float dhtTempC = dht.readTempC();
 
-        //Soil moisture sensor readings
-        int soilMoisture5vVal = soilMoisture5v.read();
+    currentMillis = millis();
+    if(currentMillis - previousMillis > interval){ //Read once per interval
+      previousMillis = currentMillis;
 
-        if((millis() - oldTime) > 1000)    // Only process counters once per second
-        { 
-          detachInterrupt(sensorInterrupt);
-          flowRate = ((1000.0 / (millis() - oldTime)) * pulseCount) / calibrationFactor;
-          oldTime = millis();
-          flowMilliLitres = (flowRate / 60) * 1000;
-          totalMilliLitres += flowMilliLitres;
-          
-          unsigned int frac;
-          
-          // Reset the pulse counter so we can start incrementing again
-          pulseCount = 0;
-          
-          // Enable the interrupt again now that we've finished sending output
-          attachInterrupt(sensorInterrupt, pulseCounter, FALLING);
-        }
+      //All Sensor readings come here
+      // DHT22/11 Humidity and Temperature Sensor Reading humidity in % and Temperature in Celcius
+      dhtHumidity = (float)dht.readHumidity();
+      dhtTempC = (float)dht.readTempC();
 
-        //Display readings
-        Serial.print(F("Humidity: ")); Serial.print(dhtHumidity); Serial.print(F(" [%]\t"));
-        Serial.print(F("Temp: ")); Serial.print(dhtTempC); Serial.println(F(" [C]"));
-        Serial.print(F("Val: ")); Serial.println(soilMoisture5vVal);
+      //Soil moisture sensor readings
+      soilMoisture5vVal = (int)soilMoisture5v.read();
 
-        Serial.print("Flow rate: ");
-        Serial.print(int(flowRate));  // Print the integer part of the variable
-        Serial.print("L/min");
-        Serial.print("\t");       // Print tab space
 
-        // Print the cumulative total of litres flowed since starting
-        Serial.print("Output Liquid Quantity: ");        
-        Serial.print(totalMilliLitres);
-        Serial.println("mL"); 
-        Serial.print("\t");       // Print tab space
-        Serial.print(totalMilliLitres/1000);
-        Serial.print("L");
+      currentMillis = 0;
+    }
+   
+      
+    detachInterrupt(sensorInterrupt);
+    flowRate = ((1000.0 / (millis() - oldTime)) * pulseCount) / calibrationFactor;
+    oldTime = millis();
+    flowMilliLitres = (flowRate / 60) * 1000;
+    totalMilliLitres += flowMilliLitres;
+    
+    unsigned int frac;
+    
+    // Reset the pulse counter so we can start incrementing again
+    pulseCount = 0;
+    
+    // Enable the interrupt again now that we've finished sending output
+    attachInterrupt(sensorInterrupt, pulseCounter, FALLING);
+        
+
+    //Display readings
+    Serial.print(F("Humidity: ")); Serial.print(dhtHumidity); Serial.print(F(" [%]\t"));
+    Serial.print(F("Temp: ")); Serial.print(dhtTempC); Serial.println(F(" [C]\t"));
+    Serial.print(F("Soil Moisture: ")); Serial.println(soilMoisture5vVal); Serial.print("\t");
+
+    Serial.print("Flow rate: ");
+    Serial.print(int(flowRate));  // Print the integer part of the variable
+    Serial.print("L/min \t");
+    
+    // Print the cumulative total of litres flowed since starting
+    Serial.print("Output Liquid Quantity: ");        
+    Serial.print(totalMilliLitres/1000);
+    Serial.print("L \n");
     
     
     //Turn on solenoid valve depending on sensor readings.
