@@ -106,8 +106,8 @@ void loop()
 
 
     currentMillis = millis();
-    if(currentMillis - previousMillis > interval){ //Read once per interval
-      previousMillis = currentMillis;
+    if(currentMillis - previousMillis >= interval){ //Read once per interval
+      previousMillis += interval;
 
       //All Sensor readings come here
       // DHT22/11 Humidity and Temperature Sensor Reading humidity in % and Temperature in Celcius
@@ -117,8 +117,6 @@ void loop()
       //Soil moisture sensor readings
       soilMoisture5vVal = (int)soilMoisture5v.read();
 
-
-      currentMillis = 0;
     }
    
       
