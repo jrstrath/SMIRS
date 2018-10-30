@@ -26,7 +26,6 @@ SolenoidValve solenoidValve(SOLENOIDVALVE_PIN_COIL1);
 
 // define vars for testing menu
 const int timeout = 10000;       //define timeout of 10 sec
-char menuOption = 0;
 long time0;
 
 
