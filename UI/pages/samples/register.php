@@ -1,3 +1,40 @@
+<?php
+    include ("connect.php");
+    session_start();
+
+    if($_SERVER["REQUEST_METHOD"] == "POST") {
+        // username, firstname, lastname, password
+        
+        $myusername = mysqli_real_escape_string($db,$_POST['username']);
+        $myfirstname = mysqli_real_escape_string($db,$_POST['firstname']);
+        $mylastname = mysqli_real_escape_string($db,$_POST['lastname']);
+        $mypassword = mysqli_real_escape_string($db,$_POST['password']);
+        $password = md5($mypassword); 
+        
+        //Check if user exists
+        $sql = "SELECT username FROM farmer WHERE username='$myusername'";
+        $result = mysqli_query($db,$sql);
+        $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
+ 
+        if(mysqli_num_rows($result) == 1)
+        {
+          echo "Sorry...This email already exist..";
+        }
+        else
+        {
+          $query = mysqli_query($db, "INSERT INTO farmer(`username`, `first_name`, `last_name`, `password`)
+                                        VALUES ('$myusername', '$myfirstname', '$mylastname', '$password')");
+ 
+          if($query)
+          {
+            //Go to login page
+            header("location: login.php");
+          }
+        }        
+     }
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -32,10 +69,10 @@
             <div class="col-lg-4 mx-auto">
               <h2 class="text-center mb-4">Register</h2>
               <div class="auto-form-wrapper">
-                <form action="#">
+                <form action="" method = "POST">
                   <div class="form-group">
                     <div class="input-group">
-                      <input type="text" class="form-control" placeholder="Username">
+                      <input type="text" name = "username" class="form-control" placeholder="Username">
                       <div class="input-group-append">
                         <span class="input-group-text">
                           <i class="mdi mdi-check-circle-outline"></i>
@@ -46,7 +83,7 @@
 
                   <div class="form-group">
                     <div class="input-group">
-                      <input type="text" class="form-control" placeholder="Firstname">
+                      <input type="text" name = "firstname" class="form-control" placeholder="Firstname">
                       <div class="input-group-append">
                         <span class="input-group-text">
                           <i class="mdi mdi-check-circle-outline"></i>
@@ -57,7 +94,7 @@
 
                   <div class="form-group">
                     <div class="input-group">
-                      <input type="text" class="form-control" placeholder="Lastname">
+                      <input type="text" name = "lastname" class="form-control" placeholder="Lastname">
                       <div class="input-group-append">
                         <span class="input-group-text">
                           <i class="mdi mdi-check-circle-outline"></i>
@@ -68,7 +105,7 @@
 
                   <div class="form-group">
                     <div class="input-group">
-                      <input type="password" class="form-control" placeholder="Password">
+                      <input type="password" name = "password" class="form-control" placeholder="Password">
                       <div class="input-group-append">
                         <span class="input-group-text">
                           <i class="mdi mdi-check-circle-outline"></i>
@@ -79,7 +116,7 @@
 
                   <div class="form-group">
                     <div class="input-group">
-                      <input type="password" class="form-control" placeholder="Confirm Password">
+                      <input type="password" name = "confirm_password" class="form-control" placeholder="Confirm Password">
                       <div class="input-group-append">
                         <span class="input-group-text">
                           <i class="mdi mdi-check-circle-outline"></i>
@@ -97,7 +134,7 @@
                   </div>
 
                   <div class="form-group">
-                    <button class="btn btn-primary submit-btn btn-block">Register</button>
+                    <input type = "submit" class="btn btn-primary submit-btn btn-block" value = "Register">
                   </div>
 
                   <div class="text-block text-center my-3">

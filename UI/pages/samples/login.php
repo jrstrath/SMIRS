@@ -6,9 +6,10 @@
         // username and password sent from form 
         
         $myusername = mysqli_real_escape_string($db,$_POST['username']);
-        $mypassword = mysqli_real_escape_string($db,$_POST['password']); 
+        $mypassword = mysqli_real_escape_string($db,$_POST['password']);
+        $password = md5($mypassword); 
         
-        $sql = "SELECT farmer_id FROM farmer WHERE username = '$myusername' and password = '$mypassword'";
+        $sql = "SELECT farmer_id FROM farmer WHERE username = '$myusername' and password = '$password'";
         $result = mysqli_query($db,$sql);
         $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
         
