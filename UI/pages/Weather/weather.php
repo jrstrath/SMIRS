@@ -8,20 +8,20 @@
 
 
     $contents = file_get_contents($url);
-    $clima=json_decode($contents, true);
+    $clima=json_decode($contents);
 
-    //$temp=$clima->main->temp;
-    //$temp_min=$clima->main->temp_min;
-    //$icon=$clima->weather[0]->icon.".png";
-    
-    //how get today date time PHP :P
-    //$today = date("F j, Y, g:i a");
-    //$cityname = $clima->name; 
-    
-    //print_r($clima);
-    foreach($clima as $key=>$value){
-        echo $key . "=>" . $value . "<br>";
+
+
+    foreach($clima->list as $value)
+    {
+        $temp = $value->main->temp;
+        $humidity = $value->main->humidity;
+        $rain = json_decode($value->rain);
+        $rainy = $rain['3h'];
+        $date = $value->dt_txt;
+        print_r($rainy);
     }
+
 
     //$temp = $clima['list']['dt']  ;
     //print_r($temp);
