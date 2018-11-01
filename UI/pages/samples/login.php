@@ -9,7 +9,7 @@
         $mypassword = mysqli_real_escape_string($db,$_POST['password']);
         $password = md5($mypassword); 
         
-        $sql = "SELECT farmer_id FROM farmer WHERE username = '$myusername' and password = '$password'";
+        $sql = "SELECT id FROM farmer WHERE username = '$myusername' and password = '$password'";
         $result = mysqli_query($db,$sql);
         $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
         
@@ -18,8 +18,8 @@
         // If result matched $myusername and $mypassword, table row must be 1 row
           
         if($count == 1) {
-           session_start("myusername");
-           $_SESSION['login_user'] = $myusername;
+           session_start('$myusername');
+           $_SESSION['user'] = $myusername;
            
            header("location: ../../index.php");
         }else {

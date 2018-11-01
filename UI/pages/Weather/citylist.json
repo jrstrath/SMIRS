@@ -1,0 +1,1312 @@
+[
+    {
+        "id": 188080,
+        "name": "Makueni",
+        "country": "KE",
+        "coord": {
+          "lon": 37.620338,
+          "lat": -1.80409
+        }
+    },
+
+    {
+        "id": 192950,
+        "name": "Republic of Kenya",
+        "country": "KE",
+        "coord": {
+          "lon": 38,
+          "lat": 1
+        }
+    },
+
+    {
+        "id": 400742,
+        "name": "Central Province",
+        "country": "KE",
+        "coord": {
+          "lon": 37,
+          "lat": -0.75
+        }
+    },
+
+    {
+        "id": 197392,
+        "name": "Gicheru",
+        "country": "KE",
+        "coord": {
+          "lon": 36.54393,
+          "lat": -1.19621
+        }
+    },
+
+    {
+        "id": 196740,
+        "name": "Homa Lime Kowuor",
+        "country": "KE",
+        "coord": {
+          "lon": 34.474751,
+          "lat": -0.43091
+        }
+    },
+
+    {
+        "id": 194565,
+        "name": "Kamweti",
+        "country": "KE",
+        "coord": {
+          "lon": 37.316669,
+          "lat": -0.33011
+        }
+    },
+
+    {
+        "id": 179204,
+        "name": "Timau",
+        "country": "KE",
+        "coord": {
+          "lon": 37.241371,
+          "lat": 0.08904
+        }
+    },
+
+    {
+        "id": 188011,
+        "name": "Malanga",
+        "country": "KE",
+        "coord": {
+          "lon": 34.43528,
+          "lat": 0.12194
+        }
+    },
+
+    {
+        "id": 186301,
+        "name": "Mombasa",
+        "country": "KE",
+        "coord": {
+          "lon": 39.663589,
+          "lat": -4.05466
+        }
+    },
+
+    {
+        "id": 198629,
+        "name": "Eldoret",
+        "country": "KE",
+        "coord": {
+          "lon": 35.26992,
+          "lat": 0.52036
+        }
+    },
+
+    {
+        "id": 192295,
+        "name": "Kiganjo",
+        "country": "KE",
+        "coord": {
+          "lon": 37.001209,
+          "lat": -0.39386
+        }
+    },
+
+    {
+        "id": 191245,
+        "name": "Kisumu",
+        "country": "KE",
+        "coord": {
+          "lon": 34.761711,
+          "lat": -0.10221
+        }
+    },
+
+    {
+        "id": 184742,
+        "name": "Nairobi Province",
+        "country": "KE",
+        "coord": {
+          "lon": 36.833328,
+          "lat": -1.28333
+        }
+    },
+
+    {
+        "id": 184745,
+        "name": "Nairobi",
+        "country": "KE",
+        "coord": {
+          "lon": 36.816669,
+          "lat": -1.28333
+        }
+    },
+
+    {
+        "id": 182361,
+        "name": "Old Mombasa",
+        "country": "KE",
+        "coord": {
+          "lon": 39.664902,
+          "lat": -4.05052
+        }
+    },
+
+    {
+        "id": 187968,
+        "name": "Malindi",
+        "country": "KE",
+        "coord": {
+          "lon": 40.119099,
+          "lat": -3.21748
+        }
+    },
+
+    {
+        "id": 184622,
+        "name": "Nakuru",
+        "country": "KE",
+        "coord": {
+          "lon": 36.066669,
+          "lat": -0.28333
+        }
+    },
+
+    {
+        "id": 400741,
+        "name": "Eastern Province",
+        "country": "KE",
+        "coord": {
+          "lon": 38,
+          "lat": 0
+        }
+    },
+
+    {
+        "id": 186827,
+        "name": "Meru",
+        "country": "KE",
+        "coord": {
+          "lon": 37.655869,
+          "lat": 0.04626
+        }
+    },
+
+    {
+        "id": 196231,
+        "name": "Isiolo",
+        "country": "KE",
+        "coord": {
+          "lon": 37.58218,
+          "lat": 0.35462
+        }
+    },
+
+    {
+        "id": 191220,
+        "name": "Kitale",
+        "country": "KE",
+        "coord": {
+          "lon": 35.006222,
+          "lat": 1.01572
+        }
+    },
+
+    {
+        "id": 198476,
+        "name": "Embu",
+        "country": "KE",
+        "coord": {
+          "lon": 37.4506,
+          "lat": -0.53112
+        }
+      
+    },
+
+    {
+        "id": 400745,
+        "name": "North Eastern Province",
+        "country": "KE",
+        "coord": {
+          "lon": 40.25,
+          "lat": 1
+        }
+    },
+      
+    {
+        "id": 197745,
+        "name": "Garissa",
+        "country": "KE",
+        "coord": {
+          "lon": 39.64011,
+          "lat": -0.45355
+        }
+    },
+      
+    {
+        "id": 181656,
+        "name": "Parklands",
+        "country": "KE",
+        "coord": {
+          "lon": 36.799999,
+          "lat": -1.25
+        }
+    },
+      
+    {
+        "id": 189741,
+        "name": "Lamu",
+        "country": "KE",
+        "coord": {
+          "lon": 40.902012,
+          "lat": -2.27169
+        }
+    },
+
+    {
+        "id": 178443,
+        "name": "Wajir",
+        "country": "KE",
+        "coord": {
+          "lon": 40.05732,
+          "lat": 1.7471
+        }
+    },
+      
+    {
+        "id": 184433,
+        "name": "Nanyuki",
+        "country": "KE",
+        "coord": {
+          "lon": 37.07283,
+          "lat": 0.01667
+        }
+    },
+      
+    {
+        "id": 184736,
+        "name": "Nairobi South",
+        "country": "KE",
+        "coord": {
+          "lon": 36.833328,
+          "lat": -1.31667
+        }
+    },
+      
+    {
+        "id": 189773,
+        "name": "Lake View Estate",
+        "country": "KE",
+        "coord": {
+          "lon": 36.083328,
+          "lat": -0.3
+        }
+    },
+      
+    {
+        "id": 200017,
+        "name": "Burji",
+        "country": "KE",
+        "coord": {
+          "lon": 39.066669,
+          "lat": 3.51667
+        }
+    },
+      
+    {
+        "id": 190147,
+        "name": "Kwa Jomvu",
+        "country": "KE",
+        "coord": {
+          "lon": 39.604012,
+          "lat": -4.01045
+        }
+    },
+      
+    {
+        "id": 187585,
+        "name": "Marsabit",
+        "country": "KE",
+        "coord": {
+          "lon": 37.989861,
+          "lat": 2.32839
+        }
+    },
+      
+    {
+        "id": 187896,
+        "name": "Mandera",
+        "country": "KE",
+        "coord": {
+          "lon": 41.867008,
+          "lat": 3.93663
+        }
+    },
+      
+    {
+        "id": 189280,
+        "name": "Lodwar",
+        "country": "KE",
+        "coord": {
+          "lon": 35.597271,
+          "lat": 3.11911
+        }
+    },
+      
+    {
+        "id": 193980,
+        "name": "Kapsuser",
+        "country": "KE",
+        "coord": {
+          "lon": 35.224411,
+          "lat": -0.40394
+        }
+    },
+      
+    {
+        "id": 181389,
+        "name": "Rambara",
+        "country": "KE",
+        "coord": {
+          "lon": 34.700001,
+          "lat": -0.06667
+        }
+    },
+      
+    {
+        "id": 198442,
+        "name": "Embakasi",
+        "country": "KE",
+        "coord": {
+          "lon": 36.916672,
+          "lat": -1.3
+        }
+    },
+      
+    {
+        "id": 186531,
+        "name": "Miti ya Hunter",
+        "country": "KE",
+        "coord": {
+          "lon": 35.183331,
+          "lat": 0.31667
+        }
+    },
+
+    {
+        "id": 179330,
+        "name": "Thika",
+        "country": "KE",
+        "coord": {
+          "lon": 37.069328,
+          "lat": -1.03326
+        }
+    },
+      
+    {
+        "id": 182701,
+        "name": "Nyeri",
+        "country": "KE",
+        "coord": {
+          "lon": 36.94759,
+          "lat": -0.42013
+        }
+    },
+      
+    {
+        "id": 184707,
+        "name": "Naivasha",
+        "country": "KE",
+        "coord": {
+          "lon": 36.435909,
+          "lat": -0.71667
+        }
+    },
+      
+    {
+        "id": 185702,
+        "name": "Mumias",
+        "country": "KE",
+        "coord": {
+          "lon": 34.486401,
+          "lat": 0.33511
+        }
+    },
+      
+    {
+        "id": 185939,
+        "name": "Muhoroni",
+        "country": "KE",
+        "coord": {
+          "lon": 35.19878,
+          "lat": -0.15406
+        }
+    },
+      
+    {
+        "id": 186180,
+        "name": "Moyale",
+        "country": "KE",
+        "coord": {
+          "lon": 39.058418,
+          "lat": 3.5167
+        }
+    },
+      
+    {
+        "id": 186315,
+        "name": "Molo",
+        "country": "KE",
+        "coord": {
+          "lon": 35.737431,
+          "lat": -0.2479
+        }
+    },
+     
+    {
+        "id": 186731,
+        "name": "Migori",
+        "country": "KE",
+        "coord": {
+          "lon": 34.473129,
+          "lat": -1.06344
+        }
+    },
+     
+    {
+        "id": 188492,
+        "name": "Machakos",
+        "country": "KE",
+        "coord": {
+          "lon": 37.26667,
+          "lat": -1.51667
+        }
+    },
+      
+    {
+        "id": 188657,
+        "name": "Lugulu",
+        "country": "KE",
+        "coord": {
+          "lon": 34.305279,
+          "lat": 0.39361
+        }
+    },
+      
+    {
+        "id": 191299,
+        "name": "Kisii",
+        "country": "KE",
+        "coord": {
+          "lon": 34.766659,
+          "lat": -0.68174
+        }
+    },
+      
+    {
+        "id": 192067,
+        "name": "Kilifi",
+        "country": "KE",
+        "coord": {
+          "lon": 39.849918,
+          "lat": -3.63045
+        }
+    },
+     
+    {
+        "id": 192710,
+        "name": "Kiambu",
+        "country": "KE",
+        "coord": {
+          "lon": 36.833328,
+          "lat": -1.16667
+        }
+    },
+      
+    {
+        "id": 192859,
+        "name": "Kerugoya",
+        "country": "KE",
+        "coord": {
+          "lon": 37.280312,
+          "lat": -0.49886
+        }
+    },
+      
+    {
+        "id": 192900,
+        "name": "Kericho",
+        "country": "KE",
+        "coord": {
+          "lon": 35.283138,
+          "lat": -0.36774
+        }
+    },
+      
+    {
+        "id": 195272,
+        "name": "Kakamega",
+        "country": "KE",
+        "coord": {
+          "lon": 34.752281,
+          "lat": 0.28422
+        }
+    },
+      
+    {
+        "id": 196742,
+        "name": "Homa Bay",
+        "country": "KE",
+        "coord": {
+          "lon": 34.457142,
+          "lat": -0.52731
+        }
+    },
+      
+    {
+        "id": 200067,
+        "name": "Bungoma",
+        "country": "KE",
+        "coord": {
+          "lon": 34.560551,
+          "lat": 0.5635
+        }
+    },
+      
+    {
+        "id": 200787,
+        "name": "Athi River",
+        "country": "KE",
+        "coord": {
+          "lon": 36.982449,
+          "lat": -1.45071
+        }
+    },
+      
+    {
+        "id": 383388,
+        "name": "Siaya",
+        "country": "KE",
+        "coord": {
+          "lon": 34.288231,
+          "lat": 0.06116
+        }
+    },
+
+    {
+        "id": 400743,
+        "name": "Western Province",
+        "country": "KE",
+        "coord": {
+          "lon": 34.583328,
+          "lat": 0.5
+        }
+    },
+      
+    {
+        "id": 178202,
+        "name": "Webuye",
+        "country": "KE",
+        "coord": {
+          "lon": 34.769661,
+          "lat": 0.60751
+        }
+    },
+      
+    {
+        "id": 187725,
+        "name": "Maralal",
+        "country": "KE",
+        "coord": {
+          "lon": 36.69799,
+          "lat": 1.09679
+        }
+    },
+
+    {
+        "id": 189574,
+        "name": "Lemek",
+        "country": "KE",
+        "coord": {
+          "lon": 35.382431,
+          "lat": -1.10723
+        }
+    },
+
+    {
+        "id": 178040,
+        "name": "Yala",
+        "country": "KE",
+        "coord": {
+          "lon": 34.537571,
+          "lat": 0.09906
+        }
+    },
+      
+    {
+        "id": 178073,
+        "name": "Wundanyi",
+        "country": "KE",
+        "coord": {
+          "lon": 38.364021,
+          "lat": -3.40193
+        }
+    },
+      
+    {
+        "id": 178077,
+        "name": "Wote",
+        "country": "KE",
+        "coord": {
+          "lon": 37.628819,
+          "lat": -1.78079
+        }
+    },
+      
+    {
+        "id": 178093,
+        "name": "Witu",
+        "country": "KE",
+        "coord": {
+          "lon": 40.43821,
+          "lat": -2.38886
+        }
+    },
+      
+    {
+        "id": 179525,
+        "name": "Taveta",
+        "country": "KE",
+        "coord": {
+          "lon": 37.673618,
+          "lat": -3.39632
+        }
+    },
+      
+    {
+        "id": 179634,
+        "name": "Takaungu",
+        "country": "KE",
+        "coord": {
+          "lon": 39.856621,
+          "lat": -3.68367
+        }
+    },
+      
+    {
+        "id": 179888,
+        "name": "Sotik",
+        "country": "KE",
+        "coord": {
+          "lon": 35.11871,
+          "lat": -0.68333
+        }
+    },
+     
+    {
+        "id": 180389,
+        "name": "Shimoni",
+        "country": "KE",
+        "coord": {
+          "lon": 39.381748,
+          "lat": -4.64756
+        }
+    },
+      
+    {
+        "id": 180646,
+        "name": "Sawa Sawa",
+        "country": "KE",
+        "coord": {
+          "lon": 39.484631,
+          "lat": -4.47166
+        }
+    },
+      
+    {
+        "id": 180868,
+        "name": "Sagana",
+        "country": "KE",
+        "coord": {
+          "lon": 37.200001,
+          "lat": -0.66667
+        }
+    },
+      
+    {
+        "id": 180992,
+        "name": "Rumuruti",
+        "country": "KE",
+        "coord": {
+          "lon": 36.53886,
+          "lat": 0.26699
+        }
+    },
+      
+    {
+        "id": 181702,
+        "name": "Oyugis",
+        "country": "KE",
+        "coord": {
+          "lon": 34.735828,
+          "lat": -0.50898
+        }
+    },
+      
+    {
+        "id": 181735,
+        "name": "Othaya",
+        "country": "KE",
+        "coord": {
+          "lon": 36.960911,
+          "lat": -0.56516
+        }
+    },
+      
+    {
+        "id": 182498,
+        "name": "Ogembo",
+        "country": "KE",
+        "coord": {
+          "lon": 34.725311,
+          "lat": -0.7984
+        }
+    },
+      
+    {
+        "id": 183595,
+        "name": "Ngong",
+        "country": "KE",
+        "coord": {
+          "lon": 36.656601,
+          "lat": -1.36175
+        }
+    },
+      
+    {
+        "id": 184367,
+        "name": "Naro Moru",
+        "country": "KE",
+        "coord": {
+          "lon": 37.02129,
+          "lat": -0.16756
+        }
+    },
+      
+    {
+        "id": 184471,
+        "name": "Nandi Hills",
+        "country": "KE",
+        "coord": {
+          "lon": 35.183781,
+          "lat": 0.1066
+        }
+    },
+      
+    {
+        "id": 184546,
+        "name": "Nambale",
+        "country": "KE",
+        "coord": {
+          "lon": 34.251942,
+          "lat": 0.44594
+        }
+    },
+      
+    {
+        "id": 184570,
+        "name": "Namanga",
+        "country": "KE",
+        "coord": {
+          "lon": 36.790531,
+          "lat": -2.54327
+        }
+    },
+      
+    {
+        "id": 184921,
+        "name": "Mwingi",
+        "country": "KE",
+        "coord": {
+          "lon": 38.060051,
+          "lat": -0.93435
+        }
+    },
+      
+    {
+        "id": 185579,
+        "name": "Muranga",
+        "country": "KE",
+        "coord": {
+          "lon": 37.150002,
+          "lat": -0.71667
+        }
+    },
+     
+    {
+        "id": 186101,
+        "name": "Mtito Andei",
+        "country": "KE",
+        "coord": {
+          "lon": 38.166309,
+          "lat": -2.69009
+        }
+    },
+     
+    {
+        "id": 187231,
+        "name": "Maua",
+        "country": "KE",
+        "coord": {
+          "lon": 37.940521,
+          "lat": 0.23206
+        }
+    },
+      
+    {
+        "id": 187661,
+        "name": "Mariakani",
+        "country": "KE",
+        "coord": {
+          "lon": 39.473621,
+          "lat": -3.86332
+        }
+    },
+      
+    {
+        "id": 187733,
+        "name": "Maragua",
+        "country": "KE",
+        "coord": {
+          "lon": 37.133331,
+          "lat": -0.78333
+        }
+    },
+      
+    {
+        "id": 187977,
+        "name": "Malikisi",
+        "country": "KE",
+        "coord": {
+          "lon": 34.421669,
+          "lat": 0.67694
+        }
+    },
+      
+    {
+        "id": 188025,
+        "name": "Malaba",
+        "country": "KE",
+        "coord": {
+          "lon": 34.2756,
+          "lat": 0.63457
+        }
+    },
+      
+    {
+        "id": 188617,
+        "name": "Lumbwa",
+        "country": "KE",
+        "coord": {
+          "lon": 35.468472,
+          "lat": -0.19675
+        }
+    },
+      
+    {
+        "id": 188714,
+        "name": "Luanda",
+        "country": "KE",
+        "coord": {
+          "lon": 34.06459,
+          "lat": 0.29668
+        }
+    },
+      
+    {
+        "id": 188981,
+        "name": "Londiani",
+        "country": "KE",
+        "coord": {
+          "lon": 35.590858,
+          "lat": -0.16496
+        }
+    },
+      
+    {
+        "id": 189367,
+        "name": "Litein",
+        "country": "KE",
+        "coord": {
+          "lon": 35.190289,
+          "lat": -0.58226
+        }
+    },
+      
+    {
+        "id": 189386,
+        "name": "Limuru",
+        "country": "KE",
+        "coord": {
+          "lon": 36.650002,
+          "lat": -1.1
+        }
+    },
+      
+    {
+        "id": 190108,
+        "name": "Kwale",
+        "country": "KE",
+        "coord": {
+          "lon": 39.452061,
+          "lat": -4.17375
+        }
+    },
+      
+    {
+        "id": 190544,
+        "name": "Konza",
+        "country": "KE",
+        "coord": {
+          "lon": 37.12941,
+          "lat": -1.7426
+        }
+    },
+      
+    {
+        "id": 191675,
+        "name": "Kipini",
+        "country": "KE",
+        "coord": {
+          "lon": 40.526199,
+          "lat": -2.52565
+        }
+    },
+      
+    {
+        "id": 191833,
+        "name": "Kinango",
+        "country": "KE",
+        "coord": {
+          "lon": 39.315281,
+          "lat": -4.13723
+        }
+    },
+      
+    {
+        "id": 191837,
+        "name": "Kinancha",
+        "country": "KE",
+        "coord": {
+          "lon": 34.62616,
+          "lat": -1.18376
+        }
+    },
+      
+    {
+        "id": 192126,
+        "name": "Kikuyu",
+        "country": "KE",
+        "coord": {
+          "lon": 36.66328,
+          "lat": -1.24576
+        }
+    },
+      
+    {
+        "id": 192202,
+        "name": "Kijabe",
+        "country": "KE",
+        "coord": {
+          "lon": 36.575809,
+          "lat": -0.93304
+        }
+    },
+      
+    {
+        "id": 192869,
+        "name": "Keroka",
+        "country": "KE",
+        "coord": {
+          "lon": 34.945309,
+          "lat": -0.77584
+        }
+    },
+      
+    {
+        "id": 194038,
+        "name": "Kapsabet",
+        "country": "KE",
+        "coord": {
+          "lon": 35.105,
+          "lat": 0.20387
+        }
+    },
+      
+    {
+        "id": 194406,
+        "name": "Kangundo",
+        "country": "KE",
+        "coord": {
+          "lon": 37.34705,
+          "lat": -1.29792
+        }
+    },
+      
+    {
+        "id": 194451,
+        "name": "Kangema",
+        "country": "KE",
+        "coord": {
+          "lon": 36.966671,
+          "lat": -0.68333
+        }
+    },
+      
+    {
+        "id": 195298,
+        "name": "Kajiado",
+        "country": "KE",
+        "coord": {
+          "lon": 36.776829,
+          "lat": -1.85238
+        }
+    },
+      
+    {
+        "id": 195821,
+        "name": "Kabarnet",
+        "country": "KE",
+        "coord": {
+          "lon": 35.743031,
+          "lat": 0.49194
+        }
+    },
+      
+    {
+        "id": 197514,
+        "name": "Gazi",
+        "country": "KE",
+        "coord": {
+          "lon": 39.505878,
+          "lat": -4.42402
+        }
+    },
+     
+    {
+        "id": 198636,
+        "name": "Eldama Ravine",
+        "country": "KE",
+        "coord": {
+          "lon": 35.730782,
+          "lat": 0.05158
+        }
+    },
+      
+    {
+        "id": 199284,
+        "name": "Chuka",
+        "country": "KE",
+        "coord": {
+          "lon": 37.645882,
+          "lat": -0.33316
+        }
+    },
+      
+    {
+        "id": 199604,
+        "name": "Chepareria",
+        "country": "KE",
+        "coord": {
+          "lon": 35.203899,
+          "lat": 1.30774
+        }
+    },
+      
+    {
+        "id": 199971,
+        "name": "Butere",
+        "country": "KE",
+        "coord": {
+          "lon": 34.493481,
+          "lat": 0.20636
+        }
+    },
+     
+    {
+        "id": 200061,
+        "name": "Port Bunyala",
+        "country": "KE",
+        "coord": {
+          "lon": 33.97559,
+          "lat": 0.09388
+        }
+    },
+      
+    {
+        "id": 200304,
+        "name": "Bondo",
+        "country": "KE",
+        "coord": {
+          "lon": 34.26944,
+          "lat": 0.23861
+        }
+    },
+      
+    {
+        "id": 200308,
+        "name": "Bomet",
+        "country": "KE",
+        "coord": {
+          "lon": 35.34156,
+          "lat": -0.78129
+        }
+    },
+      
+    {
+        "id": 200575,
+        "name": "Baringo",
+        "country": "KE",
+        "coord": {
+          "lon": 35.966671,
+          "lat": 0.46667
+        }
+    },
+      
+    {
+        "id": 201229,
+        "name": "Ahero",
+        "country": "KE",
+        "coord": {
+          "lon": 34.916302,
+          "lat": -0.17462
+        }
+    },
+
+    {
+        "id": 400744,
+        "name": "Rift Valley Province",
+        "country": "KE",
+        "coord": {
+          "lon": 36,
+          "lat": 0.5
+        }
+    },
+      
+    {
+        "id": 181562,
+        "name": "Poka",
+        "country": "KE",
+        "coord": {
+          "lon": 37.450001,
+          "lat": -2.13333
+        }
+    },
+
+    {
+        "id": 183689,
+        "name": "Nginda",
+        "country": "KE",
+        "coord": {
+          "lon": 40.676601,
+          "lat": -2.06981
+        }
+    },
+
+    {
+        "id": 182763,
+        "name": "Nyanza Province",
+        "country": "KE",
+        "coord": {
+          "lon": 34.5,
+          "lat": -0.5
+        }
+    },
+
+    {
+        "id": 188408,
+        "name": "Magadi",
+        "country": "KE",
+        "coord": {
+          "lon": 36.286999,
+          "lat": -1.90122
+        }
+    },
+
+    {
+        "id": 178522,
+        "name": "Voi",
+        "country": "KE",
+        "coord": {
+          "lon": 38.563042,
+          "lat": -3.39452
+        }
+    },
+      
+    {
+        "id": 181135,
+        "name": "Rongai",
+        "country": "KE",
+        "coord": {
+          "lon": 35.863819,
+          "lat": -0.17333
+        }
+    },
+      
+    {
+        "id": 183027,
+        "name": "Nyahururu",
+        "country": "KE",
+        "coord": {
+          "lon": 36.36734,
+          "lat": 0.0421
+        }
+    },
+      
+    {
+        "id": 184379,
+        "name": "Narok",
+        "country": "KE",
+        "coord": {
+          "lon": 35.860119,
+          "lat": -1.07829
+        }
+    },
+      
+    {
+        "id": 191038,
+        "name": "Kitui",
+        "country": "KE",
+        "coord": {
+          "lon": 38.010559,
+          "lat": -1.36696
+        }
+    },
+    
+    {
+        "id": 193627,
+        "name": "Karuri",
+        "country": "KE",
+        "coord": {
+          "lon": 37.183331,
+          "lat": -0.7
+        }
+    },
+
+    {
+        "id": 400740,
+        "name": "Coast Province",
+        "country": "KE",
+        "coord": {
+          "lon": 39.5,
+          "lat": -3
+        }
+    },
+    
+    {
+        "id": 188121,
+        "name": "Makinyambu",
+        "country": "KE",
+        "coord": {
+          "lon": 38.299999,
+          "lat": -3.31667
+        }
+    }
+]

@@ -1,5 +1,9 @@
 <?php
    include('pages/samples/session.php');
+   include('pages/Weather/weather.php');
+   
+   //Get Username
+   $username = $_SESSION['user'];
 ?>
 
 <!DOCTYPE html>
@@ -46,7 +50,7 @@
               <a class="nav-link dropdown-toggle" id="UserDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
                 
                 <!--Read username from Database-->
-                <span class="profile-text">Hello Farmer!</span>
+                <span class="profile-text">Hello <?php echo $username;?></span>
                 <img class="img-xs rounded-circle" src="images/faces-clipart/pic-1.png" alt="Profile image">
               </a>
               
