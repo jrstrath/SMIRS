@@ -1,4 +1,5 @@
 <?php
+  include('pages/samples/connect.php');
    include('pages/samples/session.php');
    include('pages/Weather/weather.php');
    
@@ -99,7 +100,7 @@
                   </div>
                   
                   <div class="text-wrapper">
-                    <p class="profile-name"> _Jr </p>
+                    <p class="profile-name"> <?php echo $username; ?> </p>
                   </div>
                 </div>             
               </div>
@@ -151,7 +152,7 @@
                       <div class="float-right">
                         <p class="mb-0 text-right">Temperature</p>
                         <div class="fluid-container">
-                          <h3 class="font-weight-medium text-right mb-0">30°C</h3>
+                          <h3 class="font-weight-medium text-right mb-0"><?php print_r(current_weather('temp')); ?></h3>
                         </div>
                       </div>
                     </div>
@@ -170,7 +171,7 @@
                       <div class="float-right">
                         <p class="mb-0 text-right">Humidity</p>
                         <div class="fluid-container">
-                          <h3 class="font-weight-medium text-right mb-0">75%</h3>
+                          <h3 class="font-weight-medium text-right mb-0"><?php print_r(current_weather('humidity')); ?>%</h3>
                         </div>
                       </div>
                     </div>
@@ -187,9 +188,9 @@
                       </div>
 
                       <div class="float-right">
-                        <p class="mb-0 text-right">Soil  Moisture</p>
+                        <p class="mb-0 text-right">Weather Description</p>
                         <div class="fluid-container">
-                          <h3 class="font-weight-medium text-right mb-0">35</h3>
+                          <h3 class="font-weight-medium text-right mb-0"><?php print_r(current_weather('description')); ?></h3>
                         </div>
                       </div>
                     </div>
@@ -206,9 +207,8 @@
                       </div>
 
                       <div class="float-right">
-                        <p class="mb-0 text-right">Streak</p>
                         <div class="fluid-container">
-                          <h3 class="font-weight-medium text-right mb-0">15</h3>
+                          <h3 class="font-weight-medium text-right mb-0"><img src="<?php print_r(current_weather('icon')); ?>"></h3>
                         </div>
                       </div>
                     </div>

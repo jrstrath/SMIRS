@@ -18,7 +18,7 @@
  
         if(mysqli_num_rows($result) == 1)
         {
-          echo "Sorry...This email already exist..";
+          echo "Sorry...This user already exist..";
         }
         else
         {
