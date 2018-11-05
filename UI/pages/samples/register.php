@@ -9,21 +9,22 @@
         $myfirstname = mysqli_real_escape_string($db,$_POST['firstname']);
         $mylastname = mysqli_real_escape_string($db,$_POST['lastname']);
         $mypassword = mysqli_real_escape_string($db,$_POST['password']);
+        $location = mysqli_real_escape_string($db,$_POST['location']);
         $password = md5($mypassword); 
         
         //Check if user exists
         $sql = "SELECT username FROM farmer WHERE username='$myusername'";
         $result = mysqli_query($db,$sql);
         $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
- 
+        
         if(mysqli_num_rows($result) == 1)
         {
           echo "Sorry...This user already exist..";
         }
         else
         {
-          $query = mysqli_query($db, "INSERT INTO farmer(`username`, `first_name`, `last_name`, `password`)
-                                        VALUES ('$myusername', '$myfirstname', '$mylastname', '$password')");
+          $query = mysqli_query($db, "INSERT INTO farmer(`username`, `first_name`, `last_name`, `password`, `location`)
+                                        VALUES ('$myusername', '$myfirstname', '$mylastname', '$password', '$location')");
  
           if($query)
           {

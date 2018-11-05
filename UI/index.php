@@ -36,48 +36,22 @@
       <!-- partial:partials/_navbar.html -->
       <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
         <div class="text-center navbar-brand-wrapper d-flex align-items-top justify-content-center">
-          <a class="navbar-brand brand-logo" href="index.html">
+          <a class="navbar-brand brand-logo" href="index.php">
             <img src="images/logo.svg" alt="logo" />
           </a>
           
-          <a class="navbar-brand brand-logo-mini" href="index.html">
+          <a class="navbar-brand brand-logo-mini" href="index.php">
             <img src="images/logo-mini.svg" alt="logo" />
           </a>
         </div>
         
         <div class="navbar-menu-wrapper d-flex align-items-center">
           <ul class="navbar-nav navbar-nav-right">
-            <li class="nav-item dropdown d-none d-xl-inline-block">
-              <a class="nav-link dropdown-toggle" id="UserDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
                 
                 <!--Read username from Database-->
                 <span class="profile-text">Hello <?php echo $username;?></span>
                 <img class="img-xs rounded-circle" src="images/faces-clipart/pic-1.png" alt="Profile image">
-              </a>
               
-              <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
-                <a class="dropdown-item p-0">
-                  <div class="d-flex border-bottom">
-                    <div class="py-3 px-4 d-flex align-items-center justify-content-center">
-                      <i class="mdi mdi-bookmark-plus-outline mr-0 text-gray"></i>
-                    </div>
-                    
-                    <div class="py-3 px-4 d-flex align-items-center justify-content-center border-left border-right">
-                      <i class="mdi mdi-account-outline mr-0 text-gray"></i>
-                    </div>
-                  </div>
-                </a>
-
-                <a class="dropdown-item">
-                  Change Password
-                </a>
-
-                <a class="dropdown-item">
-                  Sign Out
-                </a>
-
-              </div>
-            </li>
           </ul>
 
           <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
@@ -107,21 +81,14 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="index.html">
-                <i class="menu-icon mdi mdi-television"></i>
+              <a class="nav-link" href="index.php">
+                <i class="menu-icon mdi mdi-elevation-rise"></i>
                 <span class="menu-title">Dashboard</span>
               </a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="index.html">
-                <i class="menu-icon mdi mdi-elevation-rise"></i>
-                <span class="menu-title">Reports</span>
-              </a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">
+              <a class="nav-link" href="index.php">
                 <i class="menu-icon mdi mdi-bookmark-plus-outline"></i>
                 <span class="menu-title">Irrigate</span>
               </a>
@@ -143,13 +110,9 @@
               <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 grid-margin stretch-card">
                 <div class="card card-statistics">
                   <div class="card-body">
-                    <div class="clearfix">
-                      <div class="float-left">
-                        <i class="mdi mdi-cube text-danger icon-lg"></i>
-                      </div>
-                      
+                    <div class="clearfix">                      
                       <!--Fetch Values from database-->
-                      <div class="float-right">
+                      <div class="float-left">
                         <p class="mb-0 text-right">Temperature</p>
                         <div class="fluid-container">
                           <h3 class="font-weight-medium text-right mb-0"><?php print_r(current_weather('temp')); ?></h3>
@@ -165,10 +128,6 @@
                   <div class="card-body">
                     <div class="clearfix">
                       <div class="float-left">
-                        <i class="mdi mdi-receipt text-warning icon-lg"></i>
-                      </div>
-
-                      <div class="float-right">
                         <p class="mb-0 text-right">Humidity</p>
                         <div class="fluid-container">
                           <h3 class="font-weight-medium text-right mb-0"><?php print_r(current_weather('humidity')); ?>%</h3>
@@ -184,7 +143,7 @@
                   <div class="card-body">
                     <div class="clearfix">
                       <div class="float-left">
-                        <i class="mdi mdi-poll-box text-success icon-lg"></i>
+                      <img src="<?php print_r(current_weather('icon')); ?>">
                       </div>
 
                       <div class="float-right">
@@ -202,20 +161,12 @@
                 <div class="card card-statistics">
                   <div class="card-body">
                     <div class="clearfix">
-                      <div class="float-left">
-                        <i class="mdi mdi-account-location text-info icon-lg"></i>
-                      </div>
-
                       <div class="float-right">
                         <div class="fluid-container">
-                          <h3 class="font-weight-medium text-right mb-0"><img src="<?php print_r(current_weather('icon')); ?>"></h3>
+                          <h3 class="font-weight-medium text-right mb-0"><?php print_r(current_weather('town'));?></h3>
                         </div>
                       </div>
                     </div>
-
-                    <p class="text-muted mt-3 mb-0">
-                      <i class="mdi mdi-reload mr-1" aria-hidden="true"></i> Days irrigated
-                    </p>
                   </div>
                 </div>
               </div>
@@ -228,17 +179,17 @@
                   <div class="card-body">
                     <div class="row d-none d-sm-flex mb-4">
                       <div class="col-4">
-                        <h5 class="text-primary">Unique Visitors</h5>
-                        <p>34657</p>
+                        <h5 class="text-primary">Soil Temperature</h5>
+                        <p>32</p>
                       </div>
 
                       <div class="col-4">
-                        <h5 class="text-primary">Bounce Rate</h5>
-                        <p>45673</p>
+                        <h5 class="text-primary">Soil Moisture</h5>
+                        <p>45</p>
                       </div>
 
                       <div class="col-4">
-                        <h5 class="text-primary">Active session</h5>
+                        <h5 class="text-primary">Water Flow Rate</h5>
                         <p>45673</p>
                       </div>
                     </div>
