@@ -1,5 +1,8 @@
 <?php
     include_once("connect.php");
+    if(isset($_SESSION['user']))
+      unset($_SESSION['user']);
+    
     session_start();
 
     if($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -99,13 +102,8 @@
                     <input type="submit" class="btn btn-primary submit-btn btn-block" value = "Login">
                   </div>
 
-                  <div class="form-group d-flex justify-content-between">
-                    <div class="form-check form-check-flat mt-0">
-                      <label class="form-check-label">
-                        <input type="checkbox" class="form-check-input" checked> Keep me signed in
-                      </label>
-                    </div>
-                    <a href="#" class="text-small forgot-password text-black">Forgot Password</a>
+                  <div class="form-group d-flex justify-content-center">
+                    <a href="register.php" class="text-small forgot-password text-black">Do no have an account? Register</a>
                   </div>
                 </form>
               </div>

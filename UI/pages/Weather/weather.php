@@ -26,12 +26,12 @@
         }
     }
     
-    function current_weather($item){
-        $url = "http://api.openweathermap.org/data/2.5/weather?id=184745&lang=en&units=metric&APPID=89650aff82771e8843cb773712a7e08e";
+    function current_weather($id,$item){
+        $url = "http://api.openweathermap.org/data/2.5/weather?id=$id&lang=en&units=metric&APPID=89650aff82771e8843cb773712a7e08e";
 
         $contents = file_get_contents($url);
         $clima=json_decode($contents);
-
+        
         
         $current_temp = $clima->main->temp;
         $current_humidity = $clima->main->humidity;

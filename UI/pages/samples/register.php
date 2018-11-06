@@ -1,6 +1,5 @@
 <?php
     include ("connect.php");
-    session_start();
 
     if($_SERVER["REQUEST_METHOD"] == "POST") {
         // username, firstname, lastname, password
@@ -106,6 +105,17 @@
 
                   <div class="form-group">
                     <div class="input-group">
+                      <input type="text" name = "location" class="form-control" placeholder="Town">
+                      <div class="input-group-append">
+                        <span class="input-group-text">
+                          <i class="mdi mdi-check-circle-outline"></i>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <div class="input-group">
                       <input type="password" name = "password" class="form-control" placeholder="Password">
                       <div class="input-group-append">
                         <span class="input-group-text">
@@ -126,13 +136,6 @@
                     </div>
                   </div>
 
-                  <div class="form-group d-flex justify-content-center">
-                    <div class="form-check form-check-flat mt-0">
-                      <label class="form-check-label">
-                        <input type="checkbox" class="form-check-input" checked> I agree to the terms
-                      </label>
-                    </div>
-                  </div>
 
                   <div class="form-group">
                     <input type = "submit" class="btn btn-primary submit-btn btn-block" value = "Register">

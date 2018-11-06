@@ -5,6 +5,16 @@
    
    //Get Username
    $username = $_SESSION['user'];
+
+   //Select location of user
+   $select = mysqli_query($db, "SELECT location FROM farmer WHERE username = '$username'");
+   $result = $select->fetch_assoc();
+   $location = $result['location'];
+
+   //Select id of the town
+   $town = mysqli_query($db, "SELECT city_id FROM city_mapping WHERE city_name = '$location'");
+   $town_result = $town->fetch_assoc();
+   $town_id = $town_result['city_id'];
 ?>
 
 <!DOCTYPE html>
@@ -95,7 +105,7 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
+              <a class="nav-link" href="pages/samples/login.php">
                 <i class="menu-icon mdi mdi-restart"></i>
                 <span class="menu-title">Sign Out</span>
               </a>
@@ -115,7 +125,7 @@
                       <div class="float-left">
                         <p class="mb-0 text-right">Temperature</p>
                         <div class="fluid-container">
-                          <h3 class="font-weight-medium text-right mb-0"><?php print_r(current_weather('temp')); ?></h3>
+                          <h3 class="font-weight-medium text-right mb-0"><?php print_r(current_weather($town_id,'temp')); ?></h3>
                         </div>
                       </div>
                     </div>
@@ -130,7 +140,7 @@
                       <div class="float-left">
                         <p class="mb-0 text-right">Humidity</p>
                         <div class="fluid-container">
-                          <h3 class="font-weight-medium text-right mb-0"><?php print_r(current_weather('humidity')); ?>%</h3>
+                          <h3 class="font-weight-medium text-right mb-0"><?php print_r(current_weather($town_id,'humidity')); ?>%</h3>
                         </div>
                       </div>
                     </div>
@@ -143,13 +153,13 @@
                   <div class="card-body">
                     <div class="clearfix">
                       <div class="float-left">
-                      <img src="<?php print_r(current_weather('icon')); ?>">
+                      <img src="<?php print_r(current_weather($town_id,'icon')); ?>">
                       </div>
 
                       <div class="float-right">
                         <p class="mb-0 text-right">Weather Description</p>
                         <div class="fluid-container">
-                          <h3 class="font-weight-medium text-right mb-0"><?php print_r(current_weather('description')); ?></h3>
+                          <h3 class="font-weight-medium text-right mb-0"><?php print_r(current_weather($town_id,'description')); ?></h3>
                         </div>
                       </div>
                     </div>
@@ -163,7 +173,7 @@
                     <div class="clearfix">
                       <div class="float-right">
                         <div class="fluid-container">
-                          <h3 class="font-weight-medium text-right mb-0"><?php print_r(current_weather('town'));?></h3>
+                          <h3 class="font-weight-medium text-right mb-0"><?php print_r(current_weather($town_id,'town'));?></h3>
                         </div>
                       </div>
                     </div>
