@@ -58,21 +58,9 @@
         <div class="navbar-menu-wrapper d-flex align-items-center">
           <ul class="navbar-nav navbar-nav-right">
             <li class="nav-item dropdown d-none d-xl-inline-block">
-              <a class="nav-link dropdown-toggle" id="UserDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
-                
                 <!--Read username from Database-->
                 <span class="profile-text">Hello <?php echo $username;?></span>
                 <img class="img-xs rounded-circle" src="images/faces-clipart/pic-1.png" alt="Profile image">
-              </a>
-              
-              <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
-                 <a class="dropdown-item" href="pages/samples/location.php">
-                  Change Location
-                </a>
-                 <a class="dropdown-item" href="pages/samples/login.php">
-                  Sign Out
-                </a>
-               </div>
             </li>
           </ul>
       </nav>
@@ -83,20 +71,6 @@
         <!-- partial:partials/_sidebar.html -->
         <nav class="sidebar sidebar-offcanvas" id="sidebar">
           <ul class="nav">
-            <li class="nav-item nav-profile">
-              <div class="nav-link">
-                <div class="user-wrapper">
-                  <div class="profile-image">
-                    <img src="images/faces-clipart/pic-1.png" alt="profile image">
-                  </div>
-                  
-                  <div class="text-wrapper">
-                    <p class="profile-name"> <?php echo $username; ?> </p>
-                  </div>
-                </div>             
-              </div>
-            </li>
-
             <li class="nav-item">
               <a class="nav-link" href="index.php">
                 <i class="menu-icon mdi mdi-elevation-rise"></i>
@@ -108,6 +82,13 @@
               <a class="nav-link" href="index.php">
                 <i class="menu-icon mdi mdi-bookmark-plus-outline"></i>
                 <span class="menu-title">Irrigate</span>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="pages/samples/location.php">
+                <i class="menu-icon mdi mdi-bookmark-plus-outline"></i>
+                <span class="menu-title">Change Location</span>
               </a>
             </li>
 
