@@ -102,7 +102,16 @@ void setup()
 void loop() 
 {
     //Connect Ethernet Module: Look into having it in the setup instead of Loop section
+    while (Serial.available()){
+        delay(30000); //30 sec delay
+        char c = Serial.read();
+        readString += c;
+    }
 
+    //if read string = "get" show all values
+    if (readString == "get"){
+
+    }
 
 
     currentMillis = millis();
@@ -150,34 +159,16 @@ void loop()
     Serial.print("L \n");
     
     
-    //Turn on solenoid valve depending on sensor readings.
-        /*Special Note:
-            This should use AI to change the values.
-
-            Test conditions
-            
-            read soil moisture and compare to optimum value from AI
-            25 being the placeholder
-        */
-        while(soilMoisture5vVal < 25 && dhtHumidity < 75 && dhtTempC < 25){
-        /*Special Note:
-            Use AI to determine all values 
-        */
-        
-            //Turn on
-                solenoidValve.on();
-
-            //Read flow rate to determine how much water is used to irrigate at a certain point
-            //Start timer
-            //Multiply timer by fow rate to give volume of water used
-        }
-        
-        //Turn off
-            solenoidValve.off();
-
-        //delay(10000); //10 sec delay
 }
 
+//Solenoid valve control
+void open_water(){
+    solenoidValve.on();
+}
+
+void close_water(){
+    solenoidValve.off();
+}
 
 /*
 Insterrupt Service Routine
