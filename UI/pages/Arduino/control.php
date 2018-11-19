@@ -1,5 +1,6 @@
 <?php
-    require('php_serial.class');
+	include('phpSerial.php');
+    require('phpSerial.class');
     $serial = new phpSerial;
 	$serial->deviceSet("/dev/ttyACM0");
 	$serial->confBaudRate(9600);
